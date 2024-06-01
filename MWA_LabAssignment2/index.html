@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institute Events</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <header>
+    <img src="institute_logo.png" alt="Institute Logo">
+    <h1>Institute Events</h1>
+  </header>
+  <main ng-controller="EventController">
+    <h2>Upcoming Events</h2>
+    <ul class="event-list">
+      <li ng-repeat="event in events">
+        <a href="event-details.html?id={{event.id}}">
+          {{event.title}}
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
