@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: rgb(242, 246, 245);
+}
+h1{
+  text-align: center;
+}
+form {border: 3px solid #1f1b1b;}
+
+
+ input[type=text], input[type=password],input[type=email] { 
+  width: 60%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display:table;
+  border: 2px solid #282727;
+  box-sizing: border-box;
+   
+ 
+}
+</style>
+</head>
+<body>
+
+<html >
+
+<body>
+  <form action="Registration.php" method="post">
+    <h1><b> Courses Registration </b></h1>
+    <div>
+      <label><b>Name of student :</b> </label> 
+    <p> <input type="text" placeholder="Enter name of student" name="Name"  id="Name"  required=" " onkeydown="return/[a-zA-Z]/i.test
+      (event.key)"></p>
+      <br>
+    <P>
+      <label for="Select courses"><b>Select courses : </b></label> 
+     <!-- <P> <input type="text" > </P> -->
+         <select  id="Select courses" name="Courses" >
+           <option value="Java">Java</option>
+           <option value="c++">c++</option>
+           <option value="Python">Python</option>
+           <option value="Sql">Sql</option>
+         </select>
+    </P>
+       <br>
+        <label><b>Email ID :</b></label>
+      <p> <input type="email" placeholder="Enter a Email" name="email" id="email" ></p>
+        <br>
+      <label><b>Password </b></label> 
+    <p> <input type="password"  placeholder ="Enter a Password" name="Password" id="password" ></p>
+    <br>
+    <!-- <label><b>Confirm password</b></label> 
+    <P><input type="password" placeholder ="Enter a Password" name=" Password" id=" password"></P> -->
+    </div>
+    <br>
+    <input type="submit" value="Register">
+    <a href="design.html">Sign in</a>
+   
+  </form>
+</body>
+</html>
+  
